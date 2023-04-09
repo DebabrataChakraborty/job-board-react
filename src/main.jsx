@@ -6,9 +6,24 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import Statistics from './Pages/Statistics/Statistics';
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home></Home>,
+  },
+    
+      {
+        path: "stats",
+        element: <Statistics></Statistics>
+      },
+     
+  
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router} />
   </React.StrictMode>,
 )
