@@ -13,6 +13,7 @@ function ColorSchemesExample() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="stats">Statistics</Nav.Link>
+            <Nav.Link href="apply">Applied Jobs </Nav.Link>
             <Nav.Link href="blog">Blog</Nav.Link>
           </Nav>
           <Button className="btn btn-primary">Start Applying</Button>

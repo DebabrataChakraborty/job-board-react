@@ -59,3 +59,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.banner_container{
+  width: 50%;
+  line-height: 38px;
+}
+.job_type{
+  border: solid 2px #535bf2;
+  color: #646cff;
+}
+.btn-gradient{
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+}

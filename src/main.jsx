@@ -9,6 +9,9 @@ import {
 import Home from './Pages/Home/Home';
 import Statistics from './Pages/Statistics/Statistics';
 import Blog from './Pages/Blog/Blog';
+import Apply from './Pages/Apply/Apply'
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,12 +19,16 @@ const router = createBrowserRouter([
   },
     
       {
-        path: "stats",
+        path: "stats/",
         element: <Statistics></Statistics>
       },
       {
-        path: "blog",
+        path: "blog/",
         element: <Blog></Blog>
+      },
+      {
+        path: "apply/",
+        element: <Apply/>
       },
      
   
