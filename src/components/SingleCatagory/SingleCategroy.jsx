@@ -1,7 +1,6 @@
 import Card from "react-bootstrap/Card";
 
 export default function SingleCategroy(props) {
-    console.log(props)
   return (
     <>
       <div className="col">
