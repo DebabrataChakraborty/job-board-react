@@ -10,7 +10,7 @@ import Apply from "./Pages/Apply/Apply";
 import Details from "./Pages/Details/Details";
 
 function loader({request}){
-  return fetch("/public/apply_job.json", {
+  return fetch("/apply_job.json", {
     signal: request.signal,
   });
 }
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
   {
     path: "details/:detail_id",
     element: <Details />,
-    loader: ({params}) => fetch(`/public/apply_job.json`)
+    loader: loader
   },
 ]);
 
