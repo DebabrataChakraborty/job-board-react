@@ -105,3 +105,9 @@ button:focus-visible {
 .button-contianer{
   width: 100%;
 }
+.img_height{
+  overflow: hidden;
+}
+.img_height img{
+  width: 100px;
+}

@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Details() {
-
-  
   const [applied, setapplied] = useState([])
   let jobdata = [];
   const { detail_id } = useParams();
@@ -86,7 +84,7 @@ export default function Details() {
               </div>
             </div>
             <div className="button-contianer mt-3">
-            <Link className="w-100 text-right btn btn-gradient text-white" to="/apply">apply now</Link>
+            <Link className="w-100 text-right btn btn-gradient text-white" to="/apply">Apply Now</Link>
             </div>
           </div>
         </div>
