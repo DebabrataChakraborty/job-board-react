@@ -1,12 +1,12 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Details() {
 
   
   const [applied, setapplied] = useState([])
-  console.log(applied);
   let jobdata = [];
   const { detail_id } = useParams();
   const datas = useLoaderData();
@@ -16,10 +16,9 @@ export default function Details() {
     }
   }
   useEffect(() => {
-    
-    localStorage.setItem('items', applied);
-   
-  }, [applied])
+    setapplied(jobdata)
+    localStorage.setItem('items', JSON.stringify(applied));
+  },[applied])
   
 
 
@@ -87,7 +86,7 @@ export default function Details() {
               </div>
             </div>
             <div className="button-contianer mt-3">
-              <a href="/apply" className="w-100 text-right btn btn-gradient text-white" onClick={setapplied(jobdata)}>Apply Now</a>
+            <Link className="w-100 text-right btn btn-gradient text-white" to="/apply">apply now</Link>
             </div>
           </div>
         </div>
