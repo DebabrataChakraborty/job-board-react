@@ -1,11 +1,12 @@
 import Card from "react-bootstrap/Card";
+import icon from "../../assets/images/portfolio.png"
 
 export default function SingleCategroy(props) {
   return (
     <>
       <div className="col">
         <Card>
-          <Card.Img variant="top" src={props.category.job_logo} />
+          <Card.Img variant="top" src={icon} />
           <Card.Body>
             <Card.Title>{props.category.job_title}</Card.Title>
             <Card.Text>
